@@ -95,3 +95,11 @@
 .md-nav--primary .md-nav__title {
     color: #e0ed5e;
 }
+
+.md-header__title {
+    font-weight: bold;
+}
+
+.md-tabs__link {
+    font-weight: bold;
+}
