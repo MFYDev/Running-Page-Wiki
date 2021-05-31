@@ -107,3 +107,8 @@
 .md-footer-copyright {
     color: #e0ed5e;
 }
+
+[data-md-toggle=search]:checked~.md-header .md-search__input {
+    background-color: #fff200;
+    color: rgb(0 0 0 / 87%);
+}
