@@ -91,3 +91,7 @@
 .md-nav__source {
     background-color: #efdc2b;
 }
+
+.md-nav--primary .md-nav__title {
+    color: #e0ed5e;
+}
