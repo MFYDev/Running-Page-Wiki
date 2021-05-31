@@ -87,3 +87,7 @@
 .md-nav__link[data-md-state=blur] {
     color: rgb(128 140 7);
 }
+
+.md-nav__source {
+    background-color: #efdc2b;
+}

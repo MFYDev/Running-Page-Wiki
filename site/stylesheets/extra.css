@@ -83,3 +83,7 @@
 .md-typeset .md-content__button {
     display: none;
 }
+
+.md-nav__link[data-md-state=blur] {
+    color: rgb(128 140 7);
+}
