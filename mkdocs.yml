@@ -1,0 +1,102 @@
+site_name: Running Page
+site_url: https://wiki.mfydev.run
+site_author: MFYDev,yihong0618,shaonianche
+site_description: >-
+  The homepage and the wiki site of Running Page. 
+
+repo_name: yihong0618/running_page
+repo_url: https://github.com/yihong0618/running_page
+
+copyright: Copyright &copy; 2021 MFYDev
+
+extra:
+  social:
+    - icon: fontawesome/solid/home
+      link: https://github.com/yihong0618/running_page
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/mfydev
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/fanyangmeng
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/mfydev
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  language: en
+  palette:
+    scheme: runningpage
+  favicon: assets/logo.png
+  logo: assets/logo.png
+  features:
+    - navigation.tabs
+    - navigation.expand
+
+plugins:
+  - search
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Overview: overview.md
+    - Installation: installation.md
+    - Customization: customization.md
+    - Sync Data:
+      - GPX: sync-data/gpx.md
+      - Garmin: sync-data/garmin.md
+      - Garmin (CN): sync-data/garmincn.md
+      - Nike Run Club: sync-data/nike.md
+      - Strava: sync-data/strava.md
+      - Nike to Strava: sync-data/niketostrava.md
+    - Generate Total Page: total-display.md
+    - Deployment: deployment.md
+  - Runner's Page Demo: user-demo.md
+  - FAQ:
+    - The data is not mine?: FAQ/data-is-not-correct.md
+    - Wanna quote the SVGs in other site?: FAQ/quote-svg-pictures.md
+    - Github displays error when quote the SVGs: FAQ/github-camo.md
+    - I want to convert SVG to PNG: FAQ/svgtopng.md
+  
+
+extra_css:
+  - stylesheets/extra.css
