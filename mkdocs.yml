@@ -94,6 +94,7 @@ nav:
     - Wanna quote the SVGs in other site?: FAQ/quote-svg-pictures.md
     - Github displays error when quote the SVGs: FAQ/github-camo.md
     - I want to convert SVG to PNG: FAQ/svgtopng.md
+    - How to add Matomo Analytics code?: FAQ/matomo.md
   
 
 extra_css:
