@@ -79,3 +79,7 @@
     background-color: #000000;
     color: #e0ed5e;
 }
+
+.md-typeset .md-content__button {
+    display: none;
+}

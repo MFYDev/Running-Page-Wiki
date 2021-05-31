@@ -13,12 +13,10 @@ extra:
   social:
     - icon: fontawesome/solid/home
       link: https://github.com/yihong0618/running_page
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/mfydev
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/fanyangmeng
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/mfydev
+      link: https://github.com/mfydev/Running-Page-Wiki
 
 theme:
   name: material
