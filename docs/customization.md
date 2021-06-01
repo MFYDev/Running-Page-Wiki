@@ -8,11 +8,24 @@ Find the following content, and change it to what you want.
 
 ```javascript
 siteMetadata: {
-  title: 'Running page',
-  siteUrl: 'https://mfydev.run',
-  description: 'MFYDev Running Page',
-},
+    siteTitle: 'MFYDev Running',
+    siteUrl: 'https://mfydev.run',
+    logo: 'https://yourlogo.com',
+    description: 'Running Page',
+    navLinks: [
+      {
+        name: 'Name1',
+        url: 'Link1',
+      },
+      {
+        name: 'Name2',
+        url: 'Link2',
+      },
+    ],
+  },
 ```
+
+You can add more links, just like the above.
 
 ## `/src/utils/const.js`
 
@@ -27,22 +40,3 @@ Switch between Chinese and English by modifying `IS_CHINESE` (`true` or `false`)
 ```javascript
 const MAPBOX_TOKEN = 'Your Own Mapbox Token';
 ```
-
-### Avatar
-
-Modify `export const AVATAR = 'Your Avatar link';`
-
-Replace it with the image link you want.
-
-### NAV Bar
-
-Change `NAVS`  to the links you want, just like:
-
-```javascript
-export const NAVS = [
-  { text: 'Running', link: 'https://mfydev.run' },
-  { text: 'About', link: 'https://github.com/mfydev' },
-];
-```
-
-You can add more links, just like the above.
