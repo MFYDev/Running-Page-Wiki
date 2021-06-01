@@ -1,0 +1,7 @@
+![WuXinming](https://user-images.githubusercontent.com/15976103/120251482-3d1acb00-c2b4-11eb-9277-e9f41ee1b5cf.png)
+
+According to the Cover News, Wu Xinming's Wechat Moments recorded his running path in recent years: on November 29, 2020, the Chongqing Bishan Half Marathon, Wu Xinming ranked 114th with a time of 1 hour 28 minutes; on April 3, 2021, the 6th Chongqing Games Marathon, an A1-level event of the China Athletics Association, Wu Xinming ran the whole race and ranked 80th with a time of 3 hours 10 minutes, ranking 20th among runners in the 40 to 49 age group.
+
+When he was young, Wu Xinming went to work in Yongchuan, Chongqing, and settled down in the area with a pair of children. His son has not yet started a family and his youngest daughter is only 14 years old, his wife does not work and the whole family depends on Wu Xinming alone for support. The eldest in the family, Wu Xinming is honest and upright, and is a role model to his brothers. "His own family is average, but he supports his parents and takes care of his brothers, and he always comes back to see his parents on their birthdays or important holidays." Ms Zhang, a sister-in-law, choked up as she recalled.
+
+At 5am on the morning of May 23, Ms Zhang heard the sad news of her elder brother's death from a call from her nephew. "We didn't dare cry out, afraid that our parents would find out. At that time, how I wished it was a fake news." Ms Zhang said. At 8am, after the news was confirmed, Wu Xinming's 73-year-old father fainted on the spot.
