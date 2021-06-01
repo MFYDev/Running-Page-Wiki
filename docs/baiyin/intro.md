@@ -1,6 +1,6 @@
 # **Never Forget, Never Forgive**
 
-# The Story of 21 Runners Deceased in Baiyin
+# The Story of 21 Runners Who Have Deceased in Baiyin 
 
 Original [GQ报道](https://mp.weixin.qq.com/s/34HL50MamcRVO-yMaPWonw) 
 
