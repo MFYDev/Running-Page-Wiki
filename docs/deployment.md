@@ -26,13 +26,13 @@ Steps:
 
 3. Modify arguments in [`run_data_sync.yml`](https://github.com/yihong0618/running_page/blob/master/.github/workflows/run_data_sync.yml);
 	1. Change `env` to your own app type and info;
-![image](https://user-images.githubusercontent.com/15976103/94450124-73f98800-01df-11eb-9b3c-ac1a6224f46f.png)
+	![image](https://user-images.githubusercontent.com/15976103/94450124-73f98800-01df-11eb-9b3c-ac1a6224f46f.png)
 	2. Add your secret in repo Settings > Secrets (add only the ones you need);
-![image](https://user-images.githubusercontent.com/15976103/94450295-aacf9e00-01df-11eb-80b7-a92b9cd1461e.png)
+	![image](https://user-images.githubusercontent.com/15976103/94450295-aacf9e00-01df-11eb-80b7-a92b9cd1461e.png)
 	My secret is as follows
-![image](https://user-images.githubusercontent.com/15976103/94451037-8922e680-01e0-11eb-9bb9-729f0eadcdb7.png)
+	![image](https://user-images.githubusercontent.com/15976103/94451037-8922e680-01e0-11eb-9bb9-729f0eadcdb7.png)
 	3. Add your [GitHub secret](https://github.com/settings/tokens) and have the same name as the GitHub secret in your project;
-![image](https://user-images.githubusercontent.com/15976103/94450721-2f222100-01e0-11eb-94a7-ef1f06fc0a59.png)
+	![image](https://user-images.githubusercontent.com/15976103/94450721-2f222100-01e0-11eb-94a7-ef1f06fc0a59.png)
 
 4. Go to repository's `Actions -> Workflows -> All Workflows`, run `Data Sync` workflow first;
 
@@ -54,13 +54,8 @@ Steps:
 ### Cloudflare Pages
 
 1. Click `Create a project` in `Pages` to connect to your Repo;
-
 2. After clicking `Begin setup`, modify Project's `Build settings`;
-
 3. Select `Framework preset` to `Gatsby`;
-
 4. Scroll down, click `Environment variables`, input the variable below:
-
    > Variable name = `PYTHON_VERSION`, Value = `3.7`
-
 5. Click `Save and Deploy`.
