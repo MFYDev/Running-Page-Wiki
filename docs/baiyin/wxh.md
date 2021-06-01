@@ -1,0 +1,9 @@
+![WangXiaohang](https://user-images.githubusercontent.com/15976103/120251507-54f24f00-c2b4-11eb-93d5-989adaf71ab9.png)
+
+After Wang Xiaohang passed away, friends set up a memorial page for him. One runner left a message in his memory: "The first time I saw you, I thought you were cold, cool and unapproachable. We couldn't even see your back as you were walking fast. It wasn't until we walked together later in the day that we realised you were a big boy with a warm heart, and you spoke funny without being out of character."
+
+The common memories of the runners restore this man who is cold on the outside and hot on the inside on one journey: the campfire KTV in the northwest desert, the sleeper night train via Dunhuang, Guazhou, Jiayuguan, Lanzhou and Xi'an, the magnificent sunrise and the Milky Way in the desert ...... Now, in the hearts of all his fellow runners, his slightly shy smiling face has coexisted with this romantic world forever.
+
+Wang Xiaohang not only participates in off-roading, but also likes to hike. "We all mention when we are on the road that when we can't run anymore, we will find a casual place to drink together and talk about the past." "I wish I could still see you like the last time I saw you, when you ran past me and I called out to you Xiao Yi (Wang Xiaohang's screen name) and you turned around and smiled at me." One runner said.
+
+Some students showed a group photo of their MBA class, and many of them recalled him and always thought of his shyness and good-naturedness." Every one of us (in the class) ate well, rested well, loved well and lived well on behalf of Xiao Hang."
