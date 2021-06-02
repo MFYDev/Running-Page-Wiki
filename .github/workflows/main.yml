@@ -20,4 +20,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CUSTOM_DOMAIN: wiki.mfydev.run
           CONFIG_FILE: mkdocs.yml
-          EXTRA_PACKAGES: build-base,mkdocs-i18n
+          EXTRA_PACKAGES: 
+            build-base
+            mkdocs-i18n
