@@ -1,23 +1,47 @@
-name: Publish docs via GitHub Pages
+name: github pages
+
 on:
-  workflow_dispatch:
   push:
     branches:
       - main
+  pull_request:
 
 jobs:
-  build:
-    name: Deploy docs
-    runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-20.04
     steps:
-      - name: Checkout main
-        uses: actions/checkout@v2
-        
-      - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CUSTOM_DOMAIN: wiki.mfydev.run
-          CONFIG_FILE: mkdocs.yml
-          EXTRA_PACKAGES: build-base mkdocs-i18n
+      - uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+
+      - name: Upgrade pip
+        run: |
+          # install pip=>20.1 to use "pip cache dir"
+          python3 -m pip install --upgrade pip
+
+      - name: Get pip cache dir
+        id: pip-cache
+        run: echo "::set-output name=dir::$(pip cache dir)"
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.pip-cache.outputs.dir }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: python3 -m pip install -r ./requirements.txt
+
+      - run: mkdocs build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
