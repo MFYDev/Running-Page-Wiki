@@ -1,0 +1,110 @@
+[data-md-color-scheme="runningpage"] {
+    --md-primary-bg-color         : #1a1a1a;
+    --md-primary-fg-color         : #e6e509;
+    --md-default-bg-color         : #1a1a1a;
+    --md-typeset-color            : #e0ed5e;
+    --md-typeset-a-color          : #e0ed5e;
+    --md-accent-fg-color          : #eeb808;
+    --md-code-bg-color            : #4a4c31;
+    --md-code-hl-name-color       : #e0ed5e;
+    --md-code-hl-keyword-color    : #f8e003;
+    --md-code-hl-string-color     : #dde015;
+    --md-code-hl-operator-color   : #eef0a7;
+    --md-code-hl-punctuation-color: #eef0a7;
+    --md-footer-fg-color--light   : #e0ed5e;
+  }
+
+.md-typeset h1 {
+    color: #e0ed5e;
+}
+
+.md-typeset h1 code, .md-typeset h2 code, .md-typeset h3 code, .md-typeset h4 code, .md-typeset h5 code, .md-typeset h6 code {
+    background-color: #4a4c31;
+}
+
+.md-typeset a {
+    font-weight: bolder;
+}
+
+.md-typeset blockquote {
+    border-left: .2rem solid #e0ed5e;
+    color: #e0ed5e;
+}
+
+[data-md-toggle=search]:checked~.md-header .md-search__input {
+    background-color: #fff200;
+    color: rgb(0 0 0 / 87%);
+}
+
+.md-search-result__meta {
+    color: #e0ed5e;
+}
+
+.md-typeset code, .md-typeset kbd, .md-typeset pre {
+    color: #e0ed5e;
+}
+
+.md-dialog__inner {
+    color: #e0ed5e;
+}
+
+.md-clipboard {
+    color: #e0ed5e;;
+}
+
+.md-typeset .admonition, .md-typeset details {
+    background-color: #edf9a1;
+}
+
+.md-typeset .admonition.note, .md-typeset details.note {
+    border-color: #eada00;
+}
+
+.md-typeset .note>.admonition-title:before, .md-typeset .note>summary:before {
+    background-color: #ea9200;
+}
+
+.md-search-result {
+    color: #e0ed5e;
+}
+
+.md-search-result__teaser {
+    color: #e0ed5e;
+}
+
+.md-search-result__icon:after {
+    background-color: #e0ed5e;
+}
+
+.md-typeset table:not([class]) th {
+    background-color: #000000;
+    color: #e0ed5e;
+}
+
+.md-typeset .md-content__button {
+    display: none;
+}
+
+.md-nav__link[data-md-state=blur] {
+    color: rgb(128 140 7);
+}
+
+.md-nav__source {
+    background-color: #efdc2b;
+}
+
+.md-nav--primary .md-nav__title {
+    color: #e0ed5e;
+}
+
+.md-header__title {
+    font-weight: bold;
+}
+
+.md-tabs__link {
+    font-weight: bold;
+}
+
+.md-footer-copyright {
+    color: #e0ed5e;
+}
