@@ -4,7 +4,7 @@
 2. 访问 [Strava Developers](http://developers.strava.com) -> [Create & Manage Your App](https://strava.com/settings/api)
 3. 创建 `My API Application`： 输入所需信息
 
-	!!! 警告
+	!!! warning
 		红框中的是必填项。 并且 `Authorization Callback Domain` 必须是 `localhost` 。
 	![My API Application](https://raw.githubusercontent.com/shaonianche/gallery/master/running_page/strava_settings_api.png)
 	创建成功如下图所示：

@@ -1,6 +1,6 @@
 ## 同步你自己的 Nike Run Club 数据
 
-!!! 警告
+!!! warning
 	**当你选择在自己的服务器上部署 Running Page 时，由于 Nike 封锁了部分 IDC 的 IP 频段，您的服务器可能无法正确同步 Nike Run Club 的数据并显示 `403 error`，此时你便不能选择使用此服务器部署。**
 	
 获取 Nike 的 `refresh_token`
