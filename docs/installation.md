@@ -1,5 +1,3 @@
-# Installation
-
 ## Download
 
 Clone or fork the repo.

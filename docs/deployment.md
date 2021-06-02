@@ -20,19 +20,21 @@ Steps:
 
 ### Github Pages
 
-1. If you are using a custom domain for GitHub Pages, open [.github/workflows/gh-pages.yml](https://github.com/yihong0618/running_page/blob/master/.github/workflows/gh-pages.yml), change `fqdn` to the domain of your site;
+1. If you are using a custom domain for GitHub Pages, open [/.github/workflows/gh-pages.yml](https://github.com/yihong0618/running_page/blob/master/.github/workflows/gh-pages.yml), change `fqdn` to the domain of your site;
 
-2. (*Skip this step if you're **NOT** using a custom domain*) Modify `gatsby-config.js`, change `pathPrefix` to the root path. If the repository name is `running_page`, the value will be `/running_page`;
+2. Modify `gatsby-config.js`, change `pathPrefix` to your own URL path. 
+
+   Example: If the repository's name is `running_page`, then your Github Pages URL will be https://{yourname}.github.io/running_page , then the value will be `/running_page`;
 
 3. Modify arguments in [`run_data_sync.yml`](https://github.com/yihong0618/running_page/blob/master/.github/workflows/run_data_sync.yml);
-	1. Change `env` to your own app type and info;
-	![image](https://user-images.githubusercontent.com/15976103/94450124-73f98800-01df-11eb-9b3c-ac1a6224f46f.png)
-	2. Add your secret in repo Settings > Secrets (add only the ones you need);
-	![image](https://user-images.githubusercontent.com/15976103/94450295-aacf9e00-01df-11eb-80b7-a92b9cd1461e.png)
-	My secret is as follows
-	![image](https://user-images.githubusercontent.com/15976103/94451037-8922e680-01e0-11eb-9bb9-729f0eadcdb7.png)
-	3. Add your [GitHub secret](https://github.com/settings/tokens) and have the same name as the GitHub secret in your project;
-	![image](https://user-images.githubusercontent.com/15976103/94450721-2f222100-01e0-11eb-94a7-ef1f06fc0a59.png)
+  1. Change `env` to your own app type and info;
+    ![image](https://user-images.githubusercontent.com/15976103/94450124-73f98800-01df-11eb-9b3c-ac1a6224f46f.png)
+  2. Add your secret in repo Settings > Secrets (add only the ones you need);
+    ![image](https://user-images.githubusercontent.com/15976103/94450295-aacf9e00-01df-11eb-80b7-a92b9cd1461e.png)
+    My secret is as follows
+    ![image](https://user-images.githubusercontent.com/15976103/94451037-8922e680-01e0-11eb-9bb9-729f0eadcdb7.png)
+  3. Add your [GitHub secret](https://github.com/settings/tokens) and have the same name as the GitHub secret in your project;
+    ![image](https://user-images.githubusercontent.com/15976103/94450721-2f222100-01e0-11eb-94a7-ef1f06fc0a59.png)
 
 4. Go to repository's `Actions -> Workflows -> All Workflows`, run `Data Sync` workflow first;
 
