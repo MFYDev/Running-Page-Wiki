@@ -1,0 +1,54 @@
+<!-- Elements added to main will be displayed on all pages -->
+{% extends "base.html" %}
+
+<!-- Matomo -->
+{% block libs %}
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://viewer.mfy.world/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '6']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+{% endblock %}
+
+<!-- Announcement bar -->
+{% block announce %}
+
+  <style>.md-announce a,.md-announce a:focus,.md-announce a:hover{color:currentColor}.md-announce strong{white-space:nowrap}.md-announce .twitter{margin-left:.2em;color:#00acee}</style>
+    <a href="https://github.com/mfydev/running-page-wiki"><strong>由MFYDev制作🎉！快去安装并开始今天的跑步吧！</strong>
+    </a>
+{% endblock %}
+
+<!-- More minimal footer -->
+{% block footer %}
+<footer class="md-footer">
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            <!-- Copyright and theme information -->
+            <div class="md-footer-copyright">
+                {% if config.copyright %}
+                <div class="md-footer-copyright__highlight">
+                    {{ config.copyright }}
+                </div>
+                {% endif %}
+                Powered by
+                <a href="https://www.mkdocs.org" title="MkDocs">MkDocs</a>
+                and
+                <a href="https://squidfunk.github.io/mkdocs-material/"
+                   title="Material for MkDocs">
+                    Material for MkDocs</a>
+            </div>
+            {% block social %}
+            {% include "partials/social.html" %}
+            {% endblock %}
+        </div>
+    </div>
+</footer>
+{% endblock %}

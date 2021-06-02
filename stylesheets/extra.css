@@ -108,3 +108,11 @@
 .md-footer-copyright {
     color: #e0ed5e;
 }
+
+.md-select__inner {
+    color: #e0ed5e;
+}
+
+.md-select__link:focus, .md-select__link:hover {
+    color: #febc00;
+}
