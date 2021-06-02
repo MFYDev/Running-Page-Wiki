@@ -139,6 +139,7 @@ nav:
       - Nike Run Club: sync-data/nike.md
       - Strava: sync-data/strava.md
       - Nike to Strava: sync-data/niketostrava.md
+      - Runtastic: sync-data/runtastic.md
     - Generate Total Page: total-display.md
     - Deployment: deployment.md
   - Runner's Page Demo: user-demo.md
