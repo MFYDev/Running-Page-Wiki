@@ -58,6 +58,7 @@ plugins:
           FAQ: 常见问题
           The data is not mine?: 显示的不是自己的数据？
           Wanna quote the SVGs in other site?: 想要在其他网页中引用SVG图片？
+          How to change the font?: 如何更改字体？
           Github displays error when quote the SVGs: Github中引用SVG图片的时候显示错误
           I want to convert SVG to PNG: 我想把SVG转化成PNG
           How to add Matomo Analytics code?: 如何添加 Matomo 分析代码？
@@ -146,6 +147,7 @@ nav:
   - FAQ:
     - The data is not mine?: FAQ/data-is-not-correct.md
     - Wanna quote the SVGs in other site?: FAQ/quote-svg-pictures.md
+    - How to change the font?: FAQ/change-font.md
     - Github displays error when quote the SVGs: FAQ/github-camo.md
     - I want to convert SVG to PNG: FAQ/svgtopng.md
     - How to add Matomo Analytics code?: FAQ/matomo.md
