@@ -14,14 +14,14 @@
         <meta name="author" content="MFYDev,yihong0618,shaonianche">
       
       
-        <link rel="canonical" href="https://wiki.mfydev.run/zh/FAQ/quote-svg-pictures">
+        <link rel="canonical" href="https://wiki.mfydev.run/zh/FAQ/change-font">
       
       <link rel="icon" href="../../../assets/logo.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.6">
     
     
       
-        <title>想要在其他网页中引用SVG图片？ - Running Page</title>
+        <title>如何更改字体？ - Running Page</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#svg" class="md-skip">
+        <a href="#running-page" class="md-skip">
           跳转至
         </a>
       
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              想要在其他网页中引用SVG图片？
+              如何更改字体？
             
           </span>
         </div>
@@ -602,6 +602,18 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../quote-svg-pictures" class="md-nav__link">
+        想要在其他网页中引用SVG图片？
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -612,12 +624,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          想要在其他网页中引用SVG图片？
+          如何更改字体？
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="." class="md-nav__link md-nav__link--active">
-        想要在其他网页中引用SVG图片？
+        如何更改字体？
       </a>
       
         
@@ -633,8 +645,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#svg" class="md-nav__link">
-    如何在其他网站引用生成的SVG图片？
+  <a href="#running-page" class="md-nav__link">
+    我该如何更改 Running Page 显示的字体？
   </a>
   
 </li>
@@ -643,18 +655,6 @@
   
 </nav>
       
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../change-font" class="md-nav__link">
-        如何更改字体？
-      </a>
     </li>
   
 
@@ -1019,8 +1019,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#svg" class="md-nav__link">
-    如何在其他网站引用生成的SVG图片？
+  <a href="#running-page" class="md-nav__link">
+    我该如何更改 Running Page 显示的字体？
   </a>
   
 </li>
@@ -1037,25 +1037,80 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/yihong0618/running_page/edit/master/docs/FAQ/quote-svg-pictures.zh.md" title="编辑此页" class="md-content__button md-icon">
+                  <a href="https://github.com/yihong0618/running_page/edit/master/docs/FAQ/change-font.zh.md" title="编辑此页" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>想要在其他网页中引用SVG图片？</h1>
+                  <h1>如何更改字体？</h1>
                 
-                <h2 id="svg">如何在其他网站引用生成的SVG图片？<a class="headerlink" href="#svg" title="Permanent link">&para;</a></h2>
-<p>相关 Issues：</p>
-<ul>
-<li><a href="https://github.com/yihong0618/running_page/issues/106">不打包 svg 至 js · Issue #106 · yihong0618/running_page (github.com)</a></li>
-</ul>
-<p>由于某些原因，当您构建静态网站时，SVG 图片不会复制到 <code>/public</code> 文件夹，这意味着如果您选择在自己的服务器上托管 Running Page，仅仅<code>build</code>则无法引用它。</p>
-<p>解决方案很简单。 您只需要将它们从 <code>/assets</code> 复制到 <code>/public/static</code> 文件夹。</p>
-<p>您可以手动完成，也可以使用一个命令行。</p>
-<p>例如：</p>
-<div class="highlight"><pre><span></span><code>cp -r ./assets/* ./public/static
+                <h2 id="running-page">我该如何更改 Running Page 显示的字体？<a class="headerlink" href="#running-page" title="Permanent link">&para;</a></h2>
+<p>相关 Issue:</p>
+<p>[<a href="https://github.com/yihong0618/running_page/issues/140">feat] chang the font. · Issue #140 · yihong0618/running_page (github.com)</a></p>
+<p>回答：</p>
+<p>请按照以下步骤进行：</p>
+<ol>
+<li>在 <code>/src/styles</code> 目录下创建 <code>fontface.scss</code> ；</li>
+<li>请确保你要替换的字体有一个能够直接在线引用的链接；</li>
+<li>使<code>fontface.scss</code> 的内容和下面类似，并且替换掉 font link；
+    <div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">font-face</span> <span class="p">{</span>
+<span class="nt">font-family</span><span class="o">:</span> <span class="s1">&#39;IBM Plex Sans&#39;</span><span class="o">;</span>
+<span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="nt">Your</span> <span class="nt">Font</span> <span class="nt">Link</span><span class="o">)</span>  <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;woff2&#39;</span><span class="o">),</span>
+<span class="nt">url</span><span class="o">(</span><span class="nt">Your</span> <span class="nt">Font</span> <span class="nt">Link</span><span class="o">)</span>  <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;woff&#39;</span><span class="o">);</span>
+<span class="nt">font-weight</span><span class="o">:</span> <span class="nt">500</span><span class="o">;</span>
+<span class="nt">font-style</span><span class="o">:</span> <span class="nt">normal</span><span class="o">;</span>
+<span class="p">}</span>
 </code></pre></div>
-<p>如果你在使用 Github Pages 部署，参考这个 <a href="https://github.com/yihong0618/running_page/pull/130/commits/f0c0a73fb87d5eda09dbbc7aac85980ea1fc3607">feat: add copy svg copy command by Mayandev · Pull Request #130 · yihong0618/running_page (github.com)</a> 也是一个不错的解决方法。</p>
+    请注意： <code>font-weight</code> 和 <code>font-style</code> 不是必要的，如果你需要再添加。</li>
+<li>编辑 <code>/src/style/variables.scss</code>:<ol>
+<li>把 <code>@import './fontface.scss';</code> 添加到第一行；</li>
+<li>把你要用的字体名称加到 <code>$global-font-family:</code> 的最前面，像下面这样：
+<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">import</span> <span class="s1">&#39;./fontface.scss&#39;</span><span class="p">;</span>
+<span class="o">$</span><span class="nt">global-font-family</span><span class="o">:</span> <span class="s1">&#39;Your font name&#39;</span><span class="o">,</span> <span class="nt">ibm-plex-sans</span><span class="o">,</span><span class="s1">&#39;Microsoft YaHei&#39;</span><span class="o">,</span> <span class="s1">&#39;Helvetica Neue&#39;</span><span class="o">,</span> <span class="nt">Arial</span><span class="o">,</span> <span class="nt">sans-serif</span><span class="o">;</span>
+</code></pre></div></li>
+</ol>
+</li>
+<li>把 <code>@import '../../styles/variables.scss';</code> 加到 <code>/src/components/RunMap/style.module.scss</code> 的第一行， 然后更改 <code>font-family:</code> 为 <code>$global-font-family;</code>。最后像下面这样：
+    <div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">import</span> <span class="s1">&#39;../../styles/variables.scss&#39;</span><span class="p">;</span>
+
+<span class="p">.</span><span class="nc">locationSVG</span> <span class="p">{</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+  <span class="k">width</span><span class="p">:</span>  <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+  <span class="k">margin</span><span class="p">:</span> <span class="mi">1</span><span class="kt">rem</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">buttons</span> <span class="p">{</span>
+  <span class="k">width</span><span class="p">:</span> <span class="mi">90</span><span class="kt">%</span><span class="p">;</span>
+  <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="kc">auto</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">button</span> <span class="p">{</span>
+  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+  <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
+  <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
+  <span class="k">width</span><span class="p">:</span> <span class="mi">10</span><span class="kt">%</span><span class="p">;</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">margin-top</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+  <span class="k">color</span><span class="p">:</span> <span class="n">write</span><span class="p">;</span>
+  <span class="k">font-family</span><span class="p">:</span> <span class="err">$</span><span class="n">global-font-family</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">runTitle</span> <span class="p">{</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">26</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">width</span><span class="p">:</span> <span class="mi">710</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+  <span class="k">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">left</span><span class="p">:</span> <span class="mi">120</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">font-family</span><span class="p">:</span> <span class="err">$</span><span class="n">global-font-family</span><span class="p">;</span>
+  <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></li>
+<li>搞定！</li>
+</ol>
                 
               
               
