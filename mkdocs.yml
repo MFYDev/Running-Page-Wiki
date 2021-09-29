@@ -62,6 +62,7 @@ plugins:
           Github displays error when quote the SVGs: Github中引用SVG图片的时候显示错误
           I want to convert SVG to PNG: 我想把SVG转化成PNG
           How to add Matomo Analytics code?: 如何添加 Matomo 分析代码？
+          TypeError Cannot read property 'get' of undefined: TypeError Cannot read property 'get' of undefined
           ★Story of Baiyin: ★白银越野赛21位逝者的故事
           The Story of 21 Runners Who Have Deceased in Baiyin: 21位在白银越野赛中去世跑者的故事
           Zhang Fenglian: 张凤莲
@@ -151,6 +152,7 @@ nav:
     - Github displays error when quote the SVGs: FAQ/github-camo.md
     - I want to convert SVG to PNG: FAQ/svgtopng.md
     - How to add Matomo Analytics code?: FAQ/matomo.md
+    - TypeError Cannot read property 'get' of undefined: no-xcode-or-clt.md
   - ★Story of Baiyin:
     - The Story of 21 Runners Who Have Deceased in Baiyin: baiyin/intro.md
     - Zhang Fenglian: baiyin/zfl.md
