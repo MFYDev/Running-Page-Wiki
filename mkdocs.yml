@@ -152,7 +152,7 @@ nav:
     - Github displays error when quote the SVGs: FAQ/github-camo.md
     - I want to convert SVG to PNG: FAQ/svgtopng.md
     - How to add Matomo Analytics code?: FAQ/matomo.md
-    - TypeError Cannot read property 'get' of undefined: no-xcode-or-clt.md
+    - TypeError Cannot read property 'get' of undefined: FAQ/no-xcode-or-clt.md
   - ★Story of Baiyin:
     - The Story of 21 Runners Who Have Deceased in Baiyin: baiyin/intro.md
     - Zhang Fenglian: baiyin/zfl.md
