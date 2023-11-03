@@ -1,7 +1,7 @@
 | 跑者 | 主页                                       | 数据源 |
 | ------- | ------- | ------- |
-| [shaonianche](https://github.com/shaonianche) | https://run.duangfei.org | Nike |
-| [yihong0618](https://github.com/yihong0618) | https://yihong.run/running | Nike |
+| [shaonianche](https://github.com/shaonianche) | https://run.duanfei.org | Nike |
+| [yihong0618](https://github.com/yihong0618) | https://yihong.run | Nike |
 | [MFYDev](https://github.com/MFYDev) | https://mfydev.run | Strava |
 | [geekplux](https://github.com/geekplux) | https://activities.geekplux.com | Nike |
 | [ben_29](https://github.com/ben-29) | https://running.ben29.xyz | Strava |
